@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Nieznany </title></head><body>
+<p>For an overview of the project including links to downloads, documentation and a screenshot, see <a href="http://laneslexicon.github.io">here</a>.</p>
+<p>Users may wish to check <a href="https://github.com/laneslexicon/LexiconDatabase">here</a> for new versions of the database. The lastest version is as of 10th April 2018 (version 1.0.9).</p>
+<p>This is the gui application repository for the project.</p>
+<p>Windows and OSX users can download binaries from <a href="https://github.com/laneslexicon/lexicon/releases">here</a>.</p>
+<p>Linux and *BSD users will need to build the application. The quickest way to build is as below. You will need to install Qt and LibXSLT. (On Debian based systems, the packages are libxml2-dev and libxlst1-dev.)</p>
+<p>```</p>
+<h1 id="fetch-the-sources">fetch the sources</h1>
+<blockquote>
+<p>git clone https://github.com/laneslexicon/lexicon
+cd lexicon</p>
+</blockquote>
+<h1 id="generate-the-make-file">generate the make file</h1>
+<blockquote>
+<p>qmake laneslexicon.pro</p>
+</blockquote>
+<h1 id="build-it-on-freebsd-this-is-gmake">build it. On FreeBSD this is 'gmake'</h1>
+<blockquote>
+<p>make</p>
+</blockquote>
+<h1 id="fetch-the-database-images-documentation-etc">fetch the database, images, documentation etc</h1>
+<blockquote>
+<p>git clone https://github.com/laneslexicon/lexicon_config</p>
+</blockquote>
+<h1 id="give-it-the-right-name">give it the right name</h1>
+<blockquote>
+<p>mv lexicon_config Resources
+cd Resources
+unzip lexicon.sqlite.zip
+cd ..</p>
+</blockquote>
+<h2 id="run-the-application">run the application</h2>
+<blockquote>
+<p>./laneslexicon
+```</p>
+</blockquote>
+<p>Please see <a href="http://laneslexicon.github.io/lexicon/site/dev-guide/build/index.html">here</a> for a description and for more detailed build instructions.</p>
+</body></html>
